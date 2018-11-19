@@ -3,15 +3,21 @@ import {
   Alert,
 } from "react-native";
 
+// By default RN adds a default button if nothing is provided.
+// We have to emulate this default setting to ensure that we can intercept this button's press
+const DefaultRNButtons = [{
+  text: "OK",
+}];
 
 const AlertAsync = (
   title,
   message,
   buttons,
-  options,
+  options = {},
   type
 ) => {
   return new Promise((resolve, reject) => {
+
     const interceptCallback = callback => {
       if (!callback) {
         resolve();
@@ -29,12 +35,12 @@ const AlertAsync = (
       }
     };
 
-    const interceptedButtons = buttons
-      ? buttons.map(button => ({
-        ...button,
-        onPress: () => interceptCallback(button.onPress),
-      }))
-      : buttons;
+    const nonEmptyButtons = buttons && buttons.length > 0 ? buttons : DefaultRNButtons;
+
+    const interceptedButtons = nonEmptyButtons.map(button => ({
+      ...button,
+      onPress: () => interceptCallback(button.onPress),
+    }));
 
     const interceptedOptions = {
       ...options,
