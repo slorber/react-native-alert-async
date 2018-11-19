@@ -1,0 +1,28 @@
+{
+  "name": "react-native-alert-async",
+  "version": "1.0.0",
+  "description": "An Alert.alert() that you can await",
+  "main": "AlertAsync.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slorber/react-native-alert-async.git"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "reactnative",
+    "alert",
+    "async",
+    "await"
+  ],
+  "author": "Sébastien Lorber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slorber/react-native-alert-async/issues"
+  },
+  "homepage": "https://github.com/slorber/react-native-alert-async#readme",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  }
+}
