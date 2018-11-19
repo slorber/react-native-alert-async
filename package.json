@@ -1,8 +1,9 @@
 {
   "name": "react-native-alert-async",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An Alert.alert() that you can await",
   "main": "AlertAsync.js",
+  "types": "AlertAsync.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/slorber/react-native-alert-async.git"
@@ -24,5 +25,8 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.57.11"
   }
 }
