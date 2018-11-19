@@ -1,6 +1,6 @@
 {
   "name": "react-native-alert-async",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An Alert.alert() that you can await",
   "main": "AlertAsync.js",
   "types": "AlertAsync.d.ts",
