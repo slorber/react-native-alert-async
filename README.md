@@ -3,9 +3,12 @@
 An Alert.alert() that you can await 
 
 ```jsx
+ import AlertAsync from "react-native-alert-async";
+
+
  const myAction = async () => {
  
-   const choice = await Alert.alertAsync(
+   const choice = await AlertAsync(
      'Title',
      'Message',
      [
