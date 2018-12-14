@@ -36,3 +36,8 @@ It's just a wrapper around the original RN API so it's very tiny and does not re
 
 There is an existing [RN PR](https://github.com/facebook/react-native/pull/20312) waiting to be merged with this feature. In the meantime you can use this package.
 I use this in production for a long time and it's reliable.
+
+# Hire a freelance expert
+
+Looking for a React/ReactNative freelance expert with more than 5 years production experience?
+Contact me from my [website](https://sebastienlorber.com/) or with [Twitter](https://twitter.com/sebastienlorber).
